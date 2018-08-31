@@ -1,6 +1,6 @@
 # v1.0.1    2018-08-31     webmaster@highskillz.com
 #
-FROM redis:4.0
+FROM redis:4.0-alpine
 
 MAINTAINER HighSkillz <webdev@highskillz.com>
 
