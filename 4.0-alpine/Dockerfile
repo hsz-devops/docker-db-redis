@@ -7,4 +7,7 @@ MAINTAINER HighSkillz <webdev@highskillz.com>
 RUN apk add --no-cache --update \
         bash \
         coreutils \
+        tini \
     && echo done...
+
+ENTRYPOINT ["/sbin/tini", "--", "docker-entrypoint.sh"]
